@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "notion-style",
+  "description": "notion-style",
+  "version": "0.0.1",
+  "icons": {
+    "128": "images/icon.png"
+  },
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["*://notion.so/*", "*://www.notion.so/*"],
+      "js": ["scripts/inject.js"],
+      "css": ["scripts/style.css"]
+    }
+  ]
+}

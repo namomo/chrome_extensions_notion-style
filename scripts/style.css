@@ -1,0 +1,75 @@
+/* https://www.notion.so/namomo */
+@font-face {
+  font-family: "SFMono-Regular";
+  src: local("Comic Mono");
+  unicode-range: U+0041-005A, U+0061-007A;
+}
+@font-face {
+  font-family: "ui-sans-serif";
+  src: local("Comic Mono");
+  unicode-range: U+0041-005A, U+0061-007A;
+}
+
+/* title color */
+.notranslate[placeholder="제목 없음"] {
+  box-shadow: 0px 1px 0px rgb(0 0 0 / 20%);
+}
+.notranslate[placeholder="제목1"] {
+  background: rgb(37,38,51);
+  background: linear-gradient(90deg, rgba(37,38,51,1) 0%, rgba(93,46,136,1) 20%, rgba(187,5,39,1) 40%, rgba(192,89,4,1) 60%, rgba(216,250,10,1) 80%, rgba(0,255,38,1) 100%);
+  color: transparent;
+  background-clip:text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.notranslate[placeholder="제목2"] {
+  background: rgb(156,31,3);
+  background: linear-gradient(90deg, rgba(156,31,3,1) 0%, rgba(238,153,2,1) 20%, rgba(10,101,0,1) 40%, rgba(30,137,240,1) 60%, rgba(132,3,195,1) 80%, rgba(240,25,219,1) 100%);
+  background-clip:text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+.notranslate[placeholder="제목3"] {
+  background: rgb(0,124,11);
+  background: linear-gradient(90deg, rgba(0,124,11,1) 0%, rgba(1,240,240,1) 20%, rgba(0,117,213,1) 40%, rgba(27,20,83,1) 60%, rgba(162,19,146,1) 80%, rgba(240,25,108,1) 100%);
+  background-clip:text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+.notion-header-block .notranslate[placeholder="제목1"]::before {
+  content: "H1 ";
+  font-size: 0.5rem;
+  float: left
+}
+.notion-sub_header-block .notranslate[placeholder="제목2"]::before {
+  content: "H2 ";
+  font-size: 0.5rem;
+  float: left
+}
+.notion-sub_sub_header-block .notranslate[placeholder="제목3"]::before {
+  content: "H3 ";
+  font-size: 0.5rem;
+  float: left
+}
+.fullWidth .notion-frame .notion-scroller.vertical .notion-page-content>.notion-table-block .notion-scroller.horizontal>div[style*="padding-left"] {
+	padding-left: 5vw !important;
+  padding-right: 5vw !important;
+}
+div[data-block-id] {
+	max-width: 100% !important;
+}
+.notion-page-content {
+	padding-left: 5vw !important;
+  padding-right: 5vw !important;
+}
+.notion-code-block > div {
+	padding: 0.8rem 1rem !important;
+}
+/* .layout.layout-center-peek {
+  --margin-width: 0;
+} */
+/* .layout {
+  --content-width: minmax(auto,100%);
+} */
