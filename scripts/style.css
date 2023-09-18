@@ -74,7 +74,14 @@ div[data-block-id] {
 
 /* Code Block */
 .notion-code-block > div {
-	padding: 0.8rem 1rem !important;
+	/* padding: 0.8rem 1rem !important; */
+	padding: 0 !important;
+}
+.notion-code-block > div > div {
+  padding: 0.5rem 1rem;
+}
+.notion-code-block > div > div > div {
+  top: -8px !important;
 }
 
 /* Page Content - Side View  */
