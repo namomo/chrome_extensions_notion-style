@@ -97,7 +97,7 @@ div[data-block-id] {
   padding-right: 0 !important;
 }
 /* Page Content - Side View  */
-.notion-peek-renderer[style*="width"] {
+.notion-peek-renderer[style*="width"]:not([aria-hidden="true"]) {
   width: 70vw !important;
 }
 .layout.layout-side-peek>.layout-content.layout-editor>.notion-page-content {
